@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Product-FirmaNiaga | The Oil Supplier </title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!--font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+	<!--icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" 
+	integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container" style="max-width:2230px; padding:0px;">
+	<div class="navbar">
+		<div class="logo">
+			<img src="images/logo.png" alt="" width="125px">
+		</div>
+		<nav>
+		   <ul id="MenuItems">
+		       <li><a href="index.html">Home</a></li>
+			  <li><a href="#"></a>About</li>
+			  <li><a href="#"></a>Products</li>
+			  <li><a href="#"></a>Contact Us</li>	 
+			  <li><a href="#"></a>Account</li>			  
+		   </ul>
+		
+		</nav>
+		
+		<div  class="picture_link" style="display:flex;">
+			<img src="images/cart.png" >
+			<a style="display:block; "  href="LoginPage.html"><img src="images/account.png" ></a>
+			</div>
+		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()";>
+	</div>
+
+
+	</div>
+
+	<div class="headerTitle">
+		<p style="color:rgb(144, 140, 140);"> Product  / Product Description</p>
+	   <h1>Fully Synthetic 50W-50SM / CI-4</h1>
+	   </div>
+	
+	<!----single product details--->
+	
+	<div class="small-container single-product">
+		<div class="row" >
+			<div class="col-8" >
+				<img src="images/oil1.png"  width="100%" id="imageBox">
+					<div class="small-img-row">
+						  <div class="small-img-col">
+							  <img src="images/oil1.png"   width="100%" onclick="myFunction(this)">
+						  </div>
+						  <div class="small-img-col" >
+							  <img src="images/oil2.png"  width="100%"   onclick="myFunction(this)">
+						  </div>
+						  <div class="small-img-col"  >
+							  <img src="images/oil1.png"  width="100%"  onclick="myFunction(this)">
+						  </div>
+						
+					</div>
+			 </div>
+			 <div class="col-8" >
+				<p>FirmaNiaga / The Oil</p>
+				<h1>Fully Synthetic 50W-50SM / CI-4</h1>
+				<h4>RM 50.00</h4>
+				<select>
+					<option>Select Size</option>
+					<option>200ML</option>
+					<option>500ML</option>
+					<option>1000L</option>
+				</select>
+				<div class="productBtn">
+				<div class="wrapper">
+                <span class="minus" >-</span>
+				<span class="num" style="width:100%;text-align:center;font-size:15px; ">1</span>
+				<span class="plus">+</span>
+			</div>
+				<a href="" class="btn" >Add to Cart</a>
+
+			</div>
+				<h3>Product Details <i class="bi bi-text-indent-left"></i></h3>
+				<br>
+				<p>
+								fully synthetic engine oil incorporating advance
+								to provide excellent low temperature soot dispersion and outstanding high temperature deposit control. ZFT with Metal
+								Treatment, Additives and Synthetic was manufactured to meet requirements of almost all modern multi valves with or
+								without turbo chargers.
+				
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		const plus= document.querySelector(".plus"),minus=document.querySelector(".minus"),num=document.querySelector(".num");
+	
+	let a = 1;
+
+	plus.addEventListener("click", ()=>{
+		a++;
+		a=(a < 10) ? + a :a;
+		num.innerText = a;
+		console.log(a);
+	});
+
+	minus.addEventListener("click", ()=>{
+		if(a > 1 )
+		{
+		a--;
+		a=(a < 10) ? + a :a;
+		num.innerText = a;
+		console.log(a);
+		}
+	});
+	
+	
+	
+	
+	
+	</script>
+	
+	
+<div class="small-container ">
+	
+	<h2 class="product"> Related Product</h2>
+	<div class="row">
+		<div class="col-4">
+		<div class="featured" >
+		<a href="productDetails.html">
+			<img  id="image1" alt="" src="images/oil1.png" onclick="changeImage()"></a>
+			</div>
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-half"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+		<div class="col-4">
+		<img src="images/oil1.png">
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-half"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+
+		<div class="col-4">
+		<img src="images/oil1.png">
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star"></i>
+			<i class="bi bi-star"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+
+		<div class="col-4">
+		<img src="images/oil1.png">
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+		</div>
+	</div>
+	
+		<!-----footer----->
+	<div class="footer">
+		<div class="container" >
+			<div class="row" >
+
+				<div class="footer-col">
+				 <h6 style="font-size:40px; color:white;">FirmaNiaga</h6>
+				 The Oil Supplier
+				</div>
+				<div class="footer-col">
+					<h3> Usefull Links</h3>
+					<ul >
+						<li><a href="index.html" >Home</a></li>
+						<li><a href="about.html" >About</a></li>
+						<li><a href="product.html" >Product</a></li>
+						<li><a href="contactUs.html">Contact Us</a></li>
+						<li><a href="LoginPage.html" >Account</a></li>
+					</ul>
+			</div>
+			
+			<div class="footer-col">
+				<h3> About Us</h3>
+				
+				<p style=>We Supply the oil treatement that will help you to maintance your engine performance.</p>
+			   </div>
+
+				<div class="footer-col">
+					<h3> Annoucement</h3>
+				
+					<marquee behavior="scroll" direction="up" scrollamount="2">
+					<p> Big sale on 2023! Hurry up 10 person earlier will receiver discount 20%! Grab now</p>
+				</marquee>
+				</div>
+				
+				<div class="footer-col-contact">
+						<h3> Follow Us</h3>
+						<ul >
+							<li>
+								<a href="https://wa.me/+60194627334"   target="_blank"><i class="bi bi-whatsapp" ></i> </a>
+							</li>
+
+						    <li style="position:relative;">
+								<i class="bi bi-telephone-fill" > </i> <div class="info" >Syakilla 019-6834665</div>
+											
+							</li>
+
+							<li>
+								<a href="https://www.mysbusiness.com/company/Firmaniaga-Global-Enterprise#google_vignette" target="_blank" ><i class="bi bi-browser-chrome"> </i></a>
+							</li>
+						</ul>
+				</div>
+			</div>
+			<div class="row">
+				<a href="https://www.mysbusiness.com/company/Firmaniaga-Global-Enterprise" style="color:rgb(207, 203, 203);">&copy;2023 FirmaNiaga Global Enterprice</a>
+			</div>
+			
+		</div>
+	</div>
+
+<!-----menu----->
+<script>
+	var MenuItems=document.getElementById("MenuItems");
+	var info=document.getElementById("information");
+	MenuItems.style.maxHeight="0px";
+	
+	function menutoggle(){
+		if(MenuItems.style.maxHeight=="0px")
+		{
+		MenuItems.style.maxHeight="200px";
+		info.style.marginTop="200px";
+		
+		}
+		else
+		{
+		
+		MenuItems.style.maxHeight="0px";
+		info.style.marginTop="60px";
+		}
+	
+	
+	}
+	</script>
+
+
+<!-----product gallery js----->
+<script>
+	function myFunction(smallImg)
+	{
+		var fullImg = document.getElementById("imageBox");
+		fullImg.src =smallImg.src;
+
+	}
+</script>
+	
+
+
+				
+</body>
+</html>
+
+

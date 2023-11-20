@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Product-FirmaNiaga | The Oil Supplier </title>
+	<link rel="stylesheet" href="style.css">
+	<!--font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+	<!--icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" 
+	integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+	<style>
+
+	.search_wrap{
+		justify-content: center;
+		align-items: center;;
+		width: 70%;
+		margin: 38px auto;
+	}
+	
+	.search_wrap .search_box{
+		position: relative;
+		width: 700px;
+		height: 60px;
+	}
+	
+	.search_wrap .search_box .input{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 10px 20px;
+		border-radius: 3px;
+		font-size: 18px;
+	}
+	
+	
+	
+	.search_wrap .search_box .btn{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 60px;
+		height:100%;
+		background:black;
+		z-index: 1;
+		cursor: pointer;
+	}
+	
+	.search_wrap .search_box .btn:hover{
+		background: rgb(134, 116, 17);	
+	}
+	
+	
+	
+	.search_wrap.search_wrap_5 .search_box .btn{
+		width: 20%;
+		height: 45px;
+		top: 8px;
+		right: 5px;
+		font-size: 80%;
+		border-radius: 3px;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	
+	
+	.search_wrap.search_wrap_5 .search_box .input
+	{
+		padding-right: 145px;
+	}
+	
+	
+	
+		</style>
+		
+
+</head>
+<body>
+	<div class="header">
+		<div class="navbar"  >
+			<div class="logo">
+				<img src="images/logo.png" >
+			</div>
+			<nav>
+			   <ul id="MenuItems">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="about.html">About</a></li>
+				  <li><a href="product.html">Products</a></li>
+				  <li><a href="contactUs.html">Contact Us</a></li>	 		  
+			   </ul>
+			
+			</nav>
+			
+			<div  class="picture_link" style="display:flex;">
+			<img src="images/cart.png" >
+			<a style="display:block; "  href="LoginPage.html"><img src="images/account.png" ></a>
+			</div>
+			<img src="images/menu.png" class="menu-icon" onclick="menutoggle()";>
+		</div>
+
+
+	
+	<div class="headerTitle">
+		<p style="color:rgb(144, 140, 140);"> <a href="index.html">Home </a> / Product</p>
+	 <h1>Product</h1>
+	</div>
+
+
+
+<div class="small-container">
+	
+	
+
+		<div class="row " >
+           
+               
+			<div class="search_wrap search_wrap_5" style="display:flex;">
+				<select>
+					<option>Sort by price</option>
+					<option> Sort by popularity </option>
+					<option> Sort by demand  </option>
+				</select>
+				<div class="search_box">
+					<input type="text" class="input" placeholder="search...">
+					<div class="btn">
+						<p>Search</p>
+					</div>
+				</div>
+			</div>
+
+	  
+	
+		
+		
+		</div>
+		<div class="row">
+		
+		<div class="col-4" >
+	   
+		<div class="featured" >
+			<img  id="image1" alt="" src="images/oil1.png" onclick="changeImage()">
+			</div>
+			<a href="productDetails.html">
+			<h4> The Oil Cleaner</h4>
+		    
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-half"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</a>
+		</div>
+		
+		<div class="col-4">
+		<img src="images/oil1.png">
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-half"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+
+		<div class="col-4">
+		<img src="images/oil1.png">
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star"></i>
+			<i class="bi bi-star"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+		<div class="col-4">
+			<img src="images/oil1.png">
+				<h4> The Oil Cleaner</h4>
+				<div class="rating">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-half"></i>
+				
+				</div>
+				<p>RM 50.00 </p>
+			</div>
+
+
+
+
+	</div>
+	
+		<div class="row">
+		<div class="col-4">
+		<div class="featured" >
+			<img  id="image1" alt="" src="images/oil1.png" onclick="changeImage()">
+			</div>
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-half"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+		<div class="col-4">
+		<img src="images/oil1.png">
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-half"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+
+		<div class="col-4">
+		<img src="images/oil1.png">
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star"></i>
+			<i class="bi bi-star"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+
+		<div class="col-4">
+			<img src="images/oil1.png">
+				<h4> The Oil Cleaner</h4>
+				<div class="rating">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-half"></i>
+				
+				</div>
+				<p>RM 50.00 </p>
+			</div>
+
+
+
+
+
+	</div>
+	
+	
+		<div class="row">
+		<div class="col-4">
+		<div class="featured" >
+			<img  id="image1" alt="" src="images/oil1.png" onclick="changeImage()">
+			</div>
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-half"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+		<div class="col-4">
+		<img src="images/oil1.png">
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-half"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+
+		<div class="col-4">
+		<img src="images/oil1.png">
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star"></i>
+			<i class="bi bi-star"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+
+		<div class="col-4">
+		<img src="images/oil1.png">
+			<h4> The Oil Cleaner</h4>
+			<div class="rating">
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star-fill"></i>
+			<i class="bi bi-star"></i>
+			
+			</div>
+			<p>RM 50.00 </p>
+		</div>
+
+
+
+	</div>
+
+		<div class="page-btn">
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>&#8594;</span>
+		</div>
+
+
+</div>
+</div>
+
+
+<!-----footer----->
+<div class="footer">
+	<div class="container" >
+		<div class="row" >
+
+			<div class="footer-col">
+			 <h6 style="font-size:40px; color:white;">FirmaNiaga</h6>
+			 The Oil Supplier
+			</div>
+			<div class="footer-col">
+				<h3> Usefull Links</h3>
+				<ul >
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="about.html" >About</a></li>
+					<li><a href="product.html" >Product</a></li>
+					<li><a href="contactUs.html">Contact Us</a></li>
+					<li><a href="LoginPage.html" >Account</a></li>
+				</ul>
+		</div>
+		
+		<div class="footer-col">
+			<h3> About Us</h3>
+			
+			<p style=>We Supply the oil treatement that will help you to maintance your engine performance.</p>
+		   </div>
+
+			<div class="footer-col">
+				<h3> Annoucement</h3>
+			
+				<marquee behavior="scroll" direction="up" scrollamount="2">
+				<p> Big sale on 2023! Hurry up 10 person earlier will receiver discount 20%! Grab now</p>
+			</marquee>
+			</div>
+			
+			<div class="footer-col-contact">
+					<h3> Follow Us</h3>
+					<ul >
+						<li>
+							<a href="https://wa.me/+60194627334"   target="_blank"><i class="bi bi-whatsapp" ></i> </a>
+						</li>
+
+						<li style="position:relative;">
+							<i class="bi bi-telephone-fill" > </i> <div class="info" >Syakilla 019-6834665</div>
+										
+						</li>
+
+						<li>
+							<a href="https://www.mysbusiness.com/company/Firmaniaga-Global-Enterprise#google_vignette" target="_blank" ><i class="bi bi-browser-chrome"> </i></a>
+						</li>
+					</ul>
+			</div>
+		</div>
+		<div class="row">
+			<a href="https://www.mysbusiness.com/company/Firmaniaga-Global-Enterprise" style="color:rgb(207, 203, 203);">&copy;2023 FirmaNiaga Global Enterprice</a>
+		</div>
+		
+	</div>
+</div>
+
+
+
+<!-----menu----->
+<script>
+	var MenuItems=document.getElementById("MenuItems");
+	var info=document.getElementById("information");
+	MenuItems.style.maxHeight="0px";
+	
+	function menutoggle(){
+		if(MenuItems.style.maxHeight=="0px")
+		{
+		MenuItems.style.maxHeight="200px";
+		info.style.marginTop="200px";
+		
+		}
+		else
+		{
+		
+		MenuItems.style.maxHeight="0px";
+		info.style.marginTop="60px";
+		}
+	
+	
+	}
+	
+	
+	
+	<!-----Image Change----->
+	
+	function changeImage(){
+	let displayImage=document.getElementById('image1')
+	if(displayImage.src.match('images/oil1.jpg')){
+		displayImage.src='images/oil2.png'
+	}else if(displayImage.src.match('images/oil2.png'))
+	{
+	    displayImage.src='images/oil1.png'
+	
+	}
+	else{
+	displayImage.src='images/oil2.png'
+	
+	}
+	
+	
+	
+	}
+
+
+</script>
+
+
+</body>
+</html>
+
+

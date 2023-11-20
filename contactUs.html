@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> FirmaNiaga | The Oil Supplier </title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!--font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+	<!--icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" 
+	integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+  <style>
+body{
+	background-image:url(../images/contactCover.jpg);
+	background-size:cover;
+	margin: auto; 
+    background-repeat: no-repeat;
+    height:100%;
+ 
+}
+
+.form-container{
+    max-width:600px;
+    width:100%;
+    margin:0 auto;
+	box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    padding-top:20px;
+    margin-top:40px;
+    background-color: #25385b;
+    opacity:80%;
+    
+}
+
+.form-inner{
+    padding:30px;
+}
+
+h1{
+    font-weight:normal;
+    padding:15px;
+    color:white;
+    text-align:center;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.1);
+}
+
+.input-holder{
+
+    position:relative;
+    margin-bottom:25px;
+}
+
+.input-text,textarea{
+    width:100%;
+    height:40px;
+    border:none;
+    border-bottom:1px solid white;
+    background:transparent;
+    color:white;
+}
+
+textarea{
+    min-height:100px;
+    padding:15px 0;
+}
+
+
+.label{
+    position:absolute;
+    pointer-events:none;
+    transition:0.9s;
+    font-size:16px;
+    color:white;
+    top:18px;
+    opacity:0;
+}
+
+button{
+    cursor:pointer;
+    border-radius:3px;
+    padding:15px;
+    width:100%;
+    box-shadow:0 3px 6px 0 rgba(0,0,0,0.1);
+    border:none;
+    font-size:16px;
+    background:transparent;
+    transition:1.2s;
+    background-color:#808080;
+}
+
+button:hover{
+    box-shadow:0 3px 6px 0 rgba(  0,0,0,0.4);
+    background-color:transparent;
+    border:2px solid #808080;
+    color:white;
+}
+
+button:focus{
+      outline:0;
+}
+
+input:focus,textarea:focus{
+    outline:0;
+    border-bottom:2px solid white;
+}
+input:focus::placeholder,textarea:focus::placeholder {
+  color: transparent;
+}
+
+input:focus ~.label,
+textarea:focus ~.label{
+    opacity: 1;
+    top:-10px;
+    left:0;
+    font-size:11px;
+}
+
+/*-------media query for menu------*/
+
+@media  (max-width: 1100px)
+{
+
+
+
+}
+
+
+
+
+
+
+  </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar"  >
+            <div class="logo">
+                <img src="images/logo.png" >
+            </div>
+            <nav>
+               <ul id="MenuItems">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="product.html">Products</a></li>
+                  <li><a href="contactUs.html">Contact Us</a></li>	 		  
+               </ul>
+            
+            </nav>
+            
+            <div  class="picture_link" style="display:flex;">
+            <img src="images/cart.png" >
+            <a style="display:block; "  href="LoginPage.html"><img src="images/account.png" ></a>
+            </div>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()";>
+        </div>
+
+        </div>
+   
+        <div class="contact_section" >
+            <div class="row">
+                <div class="col-5">
+                    <div class="form-container">
+             <form>
+                <h1 style="color:white;">Contact Us</h1>
+                <div class="form-inner">
+                    <div class="input-holder">
+                      <input type="text" class="input-text" placeholder="Enter Your Name" required>
+                       <span class="label">Name</span>
+                 </div>
+
+                 <div class="input-holder">
+                    <input type="text" class="input-text" placeholder="Enter Your Phone Number" required>
+                     <span class="label">Phone</span>
+               </div>
+
+               <div class="input-holder">
+                <input type="text" class="input-text" placeholder="Enter your Email Address"required>
+                 <span class="label">Email</span>
+           </div>
+
+           <div class="input-holder">
+            <textarea placeholder="Write a message for us"></textarea>
+             <span class="label">Message</span>
+       </div>
+       <button>Send</button>
+             </div>
+             </form>
+            
+            </div>
+            </div>
+        
+
+      
+
+        </div>
+        </div>
+    </div>
+
+    <!-----footer----->
+	<div class="footer">
+		<div class="container" >
+			<div class="row" >
+
+				<div class="footer-col">
+				 <h6 style="font-size:40px; color:white;">FirmaNiaga</h6>
+				 The Oil Supplier
+				</div>
+				<div class="footer-col">
+					<h3> Usefull Links</h3>
+					<ul >
+						<li><a href="index.html" >Home</a></li>
+						<li><a href="about.html" >About</a></li>
+						<li><a href="product.html" >Product</a></li>
+						<li><a href="contactUs.html">Contact Us</a></li>
+						<li><a href="LoginPage.html" >Account</a></li>
+					</ul>
+			</div>
+			
+			<div class="footer-col">
+				<h3> About Us</h3>
+				
+				<p style=>We Supply the oil treatement that will help you to maintance your engine performance.</p>
+			   </div>
+
+				<div class="footer-col">
+					<h3> Annoucement</h3>
+				
+					<marquee behavior="scroll" direction="up" scrollamount="2">
+					<p> Big sale on 2023! Hurry up 10 person earlier will receiver discount 20%! Grab now</p>
+				</marquee>
+				</div>
+				
+				<div class="footer-col-contact">
+						<h3> Follow Us</h3>
+						<ul >
+							<li>
+								<a href="https://wa.me/+60194627334"   target="_blank"><i class="bi bi-whatsapp" ></i> </a>
+							</li>
+
+						    <li style="position:relative;">
+								<i class="bi bi-telephone-fill" > </i> <div class="info" >Syakilla 019-6834665</div>
+											
+							</li>
+
+							<li>
+								<a href="https://www.mysbusiness.com/company/Firmaniaga-Global-Enterprise#google_vignette" target="_blank" ><i class="bi bi-browser-chrome"> </i></a>
+							</li>
+						</ul>
+				</div>
+			</div>
+			<div class="row">
+				<a href="https://www.mysbusiness.com/company/Firmaniaga-Global-Enterprise" style="color:rgb(207, 203, 203);">&copy;2023 FirmaNiaga Global Enterprice</a>
+			</div>
+			
+		</div>
+	</div>
+
+
+        
+
+<!-----menu----->
+<script>
+	var MenuItems=document.getElementById("MenuItems");
+	var info=document.getElementById("information");
+	MenuItems.style.maxHeight="0px";
+	
+	function menutoggle(){
+		if(MenuItems.style.maxHeight=="0px")
+		{
+		MenuItems.style.maxHeight="200px";
+		info.style.marginTop="200px";
+		
+		}
+		else
+		{
+		
+		MenuItems.style.maxHeight="0px";
+		info.style.marginTop="0px";
+		}
+	
+	
+	}
+	
+	
+
+
+</script>
+
+    </body>
+    </html>
+    
